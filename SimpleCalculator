@@ -1,0 +1,42 @@
+'''
+Lab 2
+Authors: Dalila Portal and Katilyn Tran
+Class: COP3502C
+Section:12309
+Description: A four-function one-run calculator on the command line. The program
+will first prompt the user for two numbers, then display a menu with five operations. It will allow the
+user to select an option by reading input. The program will then display the result of the operation and
+exit. The project is designed to give students an opportunity to practice input, output, selection, and
+basic operators via a simple program
+'''
+
+# Getting two number inputs from the user
+num_one = float(input('Enter first operand: '))
+num_two = float(input('Enter second operand: '))
+
+# Calculator options
+
+print('Calculator Menu')
+print('---------------')
+print('1. Addition')
+print('2. Subtraction')
+print('3. Multiplication')
+print("4. Division")
+print('Which operation do you want to perform? ', end='')
+option = int(input())
+
+# Operations
+if option == 1:
+    sum = num_one + num_two
+    print('The result of the operation is ', sum, '. Goodbye!')
+elif option == 2:
+    sum = num_one - num_two
+    print('The result of the operation is ', sum, '. Goodbye!')
+elif option == 3:
+    sum = num_one * num_two
+    print('The result of the operation is ', sum, '. Goodbye!')
+elif option == 4:
+    sum = num_one/num_two
+    print('The result of the operation is ', sum, '. Goodbye!')
+else:
+    print('Error: Invalid selection! Terminating program.')
